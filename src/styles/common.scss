@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+$logo-bg: rgba(41, 41, 41, 1);
+$logo-bg-transparent: rgba(41, 41, 41, 0.8);
+$footer-bg: rgba(45, 43, 47, 1);
+
+
+.root {
+  font: inherit;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #727e86;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.text-center {
+  align-self: center;
+}
+
+.alert-hidden {
+  opacity: 0;
+  transition: all 250ms linear 2s;
+
+  /* the last value defines transition-delay */
+}
+
+.shadow {
+  //-webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  //-moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
