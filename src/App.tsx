@@ -1,11 +1,11 @@
-import React, { ReactElement } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./styles/common.scss";
-import Error404 from "./components/Error404/Error404";
-import { MainScreen } from "./components/MainScreen";
+import React, { ReactElement } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './styles/common.scss';
+import Error404 from './components/Error404/Error404';
+import { MainScreen } from './components/MainScreen';
 
-export const appURL = "/fe-diploma";
-export const serverURL = "https://fe-diplom.herokuapp.com";
+export const appURL = '/fe-diploma';
+export const serverURL = 'https://fe-diplom.herokuapp.com';
 
 function App(): ReactElement {
   return (

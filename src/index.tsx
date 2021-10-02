@@ -1,14 +1,14 @@
 // Core
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
 // Store
-import store from "./store";
+import { store } from './store';
 
 // Components
-import App from "./App";
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,5 +18,5 @@ ReactDOM.render(
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

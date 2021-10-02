@@ -4,7 +4,6 @@ import { RootState } from 'src/store';
 import { storageHandlerAdapter } from 'src/packages/storage/adapters/StorageHandlerAdapter';
 import { energySet } from 'src/store/energy';
 import { experienceSet } from 'src/store/experience';
-import { solutionsSet } from 'src/store/solutions';
 
 export type Props = {
   className?: string;
@@ -12,7 +11,7 @@ export type Props = {
 };
 
 export const StorageHandler = memo<Props>(() => {
-  const { energy, experience, solutions } = useSelector((store: RootState) => store);
+  const { energy, experience } = useSelector((store: RootState) => store);
   const dispatch = useDispatch();
 
   const mounted = useRef<boolean>(false);
@@ -27,12 +26,11 @@ export const StorageHandler = memo<Props>(() => {
         if (!data) return;
         if (data.energy) dispatch(energySet(data.energy));
         if (data.experience) dispatch(experienceSet(data.experience));
-        if (data.solutions) dispatch(solutionsSet(data.solutions));
       });
     } else {
-      storageHandlerAdapter.set({ energy, experience, solutions });
+      storageHandlerAdapter.set({ energy, experience });
     }
-  }, [dispatch, energy, experience, solutions]);
+  }, [dispatch, energy, experience]);
 
   return null;
 });

@@ -1,6 +1,6 @@
-import React, { memo } from "react";
-import cn from "clsx";
-import s from "./MainScreen.module.scss";
+import React, { memo } from 'react';
+import cn from 'clsx';
+import s from './MainScreen.module.scss';
 
 export type Props = {
   className?: string;
