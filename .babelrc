@@ -15,7 +15,6 @@
     "dynamic-import-node",
     [
       "@babel/transform-runtime"
-    ],
-    "@babel/plugin-proposal-class-properties"
+    ]
   ]
 }

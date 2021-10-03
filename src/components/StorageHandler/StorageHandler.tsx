@@ -2,7 +2,6 @@ import { memo, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'src/store';
 import { storageHandlerAdapter } from 'src/packages/storage/adapters/StorageHandlerAdapter';
-import { energySet } from 'src/store/energy';
 import { experienceSet } from 'src/store/experience';
 
 export type Props = {
@@ -11,7 +10,7 @@ export type Props = {
 };
 
 export const StorageHandler = memo<Props>(() => {
-  const { energy, experience } = useSelector((store: RootState) => store);
+  const { experience } = useSelector((store: RootState) => store);
   const dispatch = useDispatch();
 
   const mounted = useRef<boolean>(false);
@@ -24,13 +23,12 @@ export const StorageHandler = memo<Props>(() => {
       // данные из локального стора помещаем в стэйт менеджер
       storageHandlerAdapter.get().then((data) => {
         if (!data) return;
-        if (data.energy) dispatch(energySet(data.energy));
         if (data.experience) dispatch(experienceSet(data.experience));
       });
     } else {
-      storageHandlerAdapter.set({ energy, experience });
+      storageHandlerAdapter.set({ experience });
     }
-  }, [dispatch, energy, experience]);
+  }, [dispatch, experience]);
 
   return null;
 });

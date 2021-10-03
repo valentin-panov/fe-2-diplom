@@ -10,17 +10,15 @@ export const serverURL = 'https://fe-diplom.herokuapp.com';
 function App(): ReactElement {
   return (
     <Router basename={appURL}>
-      <div className="wrapper>">
-        <Switch>
-          <Route exact path="/" component={MainScreen} />
-          <Route path="/about.html" exact component={Error404} />
-          <Route path="/contacts.html" exact component={Error404} />
-          <Route path="/catalog.html" exact component={Error404} />
-          <Route path="/items/:id.html" exact component={Error404} />
-          <Route path="/cart.html" exact component={Error404} />
-          <Route path="*" component={Error404} /> CartIcon
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" component={MainScreen} />
+        <Route path="/about.html" exact component={Error404} />
+        <Route path="/contacts.html" exact component={Error404} />
+        <Route path="/catalog.html" exact component={Error404} />
+        <Route path="/items/:id.html" exact component={Error404} />
+        <Route path="/cart.html" exact component={Error404} />
+        <Route path="*" component={Error404} /> CartIcon
+      </Switch>
     </Router>
   );
 }

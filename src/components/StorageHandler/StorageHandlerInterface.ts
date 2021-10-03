@@ -1,5 +1,4 @@
 export type Data = {
-  energy: number;
   experience: number;
 };
 

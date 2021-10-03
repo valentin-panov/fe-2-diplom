@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { experience } from 'src/store/experience';
 import { token } from './token';
-import { energy } from './energy';
+import { menu } from './menu';
 
 export const store = configureStore({
   reducer: {
+    menu,
     token,
-    energy,
     experience,
   },
 });

@@ -1,3 +1,16 @@
+export interface Status {
+  status: 'idle' | 'pending' | 'success' | 'error';
+  error: string;
+}
+
+export interface Menu {
+  id: number;
+  title: string;
+  pathName: string;
+}
+
+// LEGACY
+
 export interface ICard {
   id: number;
   category: number;
@@ -12,11 +25,6 @@ export interface ICard {
   heelSize: string;
   price: number;
   sizes: { size: string; avalible: boolean }[];
-}
-
-export interface Status {
-  status: 'idle' | 'pending' | 'success' | 'error';
-  error: string;
 }
 
 export interface IInitialStateTopSales extends Status {
