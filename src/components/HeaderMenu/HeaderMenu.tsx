@@ -19,11 +19,11 @@ export const HeaderMenu = memo<Props>(({ className }) => {
 
   return (
     <div className={cn(s.root, className)}>
-      <nav className="">
-        <ul className="">
+      <nav className={s.navBar}>
+        <ul className={s.navBar}>
           {menu.map((item: Menu) => {
-            const active = splitLocation === item.pathName ? 'active' : '';
-            return <HeaderMenuItem key={item.id} {...item} className={cn(`nav-link`, active)} />;
+            const active = splitLocation === item.pathName ? s.active : '';
+            return <HeaderMenuItem key={item.id} {...item} className={cn(s.navLink, active)} />;
           })}
         </ul>
       </nav>
