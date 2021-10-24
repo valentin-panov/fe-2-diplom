@@ -1,0 +1,20 @@
+@import "src/styles/common";
+
+.root {
+  background: $footer-bg;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height: 519px;
+  box-sizing: border-box;
+}
+
+.bottom {
+  display: flex;
+  padding: 0 255px;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid 1px $logo-color;
+}

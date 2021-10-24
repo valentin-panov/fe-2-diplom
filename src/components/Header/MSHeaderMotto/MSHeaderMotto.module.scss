@@ -1,4 +1,4 @@
-@import "src/styles/common";
+@import "../../../styles/common";
 
 .root {
   font-style: normal;
@@ -6,9 +6,7 @@
   font-size: 36px;
   line-height: 42px;
 
-  color: $logo-color;
+  color: #E5E5E5;
 
   margin: 0;
-  //padding-top: 15px;
-  //padding-left: 258px;
 }
