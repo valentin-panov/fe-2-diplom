@@ -9,6 +9,117 @@
   min-width: 100%;
   min-height: 519px;
   box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.connectBlockTitle {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.connectBlockSubtitle {
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.subscriptionForm {
+  display: flex;
+  flex-direction: row;
+
+  .emailInput {
+    box-sizing: border-box;
+    width: 447px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    margin-right: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px 20px;
+    //color: #E5E5E5;
+  }
+
+  .btn {
+    box-sizing: border-box;
+    width: 170px;
+    height: 60px;
+  }
+}
+
+.connectBlockContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.connectBlock {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  max-width: 420px;
+
+  & p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #E5E5E5;
+    white-space: pre-line;
+  }
+}
+
+.connectIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 36px;
+}
+
+.socials {
+  & p {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .socials__imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .socials__image {
+    position: relative;
+    min-height: 30px;
+    min-width: 30px;
+    margin-right: 45px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .bottom {
