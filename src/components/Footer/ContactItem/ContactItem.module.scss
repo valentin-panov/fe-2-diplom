@@ -1,10 +1,20 @@
-.socials__image {
+.root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+
+.icon__container {
   position: relative;
   height: 30px;
-  min-width: 40px;
-  margin-right: 45px;
+  min-width: 30px;
+  margin-right: 36px;
 
-  & img {
+  .icon__image {
     width: 100%;
     height: 100%;
     object-fit: scale-down;
@@ -12,4 +22,12 @@
     top: 0;
     left: 0;
   }
+}
+
+.connection__text {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #E5E5E5;
+  white-space: pre-line;
 }
